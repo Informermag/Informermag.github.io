@@ -3,48 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Welcome to My Media Website</title>
     <style>
+        /* Web 1.0 Style */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            background-color: #cceeff; /* Light blue background for the 90s web feel */
             margin: 0;
             padding: 0;
+            color: #333;
             text-align: center;
         }
         h1 {
-            color: #333;
-            margin-top: 50px;
+            color: #00008B; /* Classic blue header color */
+            font-size: 36px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Slight text shadow for a 90s effect */
+        }
+        h2 {
+            color: #FF4500; /* Orange color for secondary headings */
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
         }
         .button-container {
-            margin-top: 50px;
+            margin-top: 40px;
         }
         .button {
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #FF6347; /* Tomato red for the buttons */
             color: white;
-            background-color: #4CAF50;
-            border: none;
+            border: 2px solid #FF4500;
             border-radius: 5px;
             text-decoration: none;
+            display: inline-block;
             margin: 10px;
-            transition: background-color 0.3s;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Button shadow for that 90s effect */
         }
         .button:hover {
-            background-color: #45a049;
+            background-color: #FF4500; /* Hover effect for buttons */
+            border-color: #FF6347;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #333;
+            background-color: #ffcc99;
+            padding: 10px;
+            border-top: 2px solid #FF6347;
+        }
+        .footer a {
+            color: #00008B;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .highlight {
+            color: #FF6347; /* Highlight text in red-orange */
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is the homepage where you can navigate to different sections of my site.</p>
+    <div class="container">
+        <h1>Welcome to My Media Website</h1>
+        <p>This is the homepage where you can navigate to different sections of my site.</p>
+        <p>Here you will find multimedia content, including videos, music, and more. Please use the links below to explore.</p>
 
-    <div class="button-container">
-        <a href="subpage1.html" class="button">Go to Subpage 1</a>
-        <a href="subpage2.html" class="button">Go to Subpage 2</a>
+        <!-- Main Navigation Buttons -->
+        <div class="button-container">
+            <a href="subpage1.html" class="button">Go to Subpage 1</a>
+            <a href="subpage2.html" class="button">Go to Subpage 2</a>
+        </div>
+
+        <hr style="width: 60%; margin-top: 40px; border-top: 2px dashed #333;">
+
+        <h2>About This Website</h2>
+        <p>Welcome to a simple, yet nostalgic multimedia experience from the <span class="highlight">golden age of the internet</span>.</p>
+        <p>Here you can find a collection of videos, music, and images, all organized in a vintage format.</p>
+
+        <div class="footer">
+            <p>&copy; 2025 MyMediaWebsite.com | All Rights Reserved</p>
+            <p>Contact: <a href="mailto:contact@mymediawebsite.com">contact@mymediawebsite.com</a></p>
+        </div>
     </div>
 
 </body>
 </html>
-
