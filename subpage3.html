@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpage 3 - Media Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .media-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .media-container {
+            text-align: center;
+            width: 250px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .media-container img, .media-container video, .media-container audio {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .media-container img:hover, .media-container video:hover {
+            transform: scale(1.1);
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .link {
+            font-size: 12px;
+            color: #555;
+            text-decoration: none;
+        }
+        .button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Welcome to Subpage 3 - Media Gallery</h1>
+    <p>Here you'll find videos, images, and audio. Click on any item to explore.</p>
+
+    <div class="media-gallery">
+        <!-- Video 1 with clickable play -->
+        <div class="media-container">
+            <video width="250" controls>
+                <source src="Assets/Video/16 Year Old Boy Goes Off On Chief Keef Haters  @RaraFrmAhkCity .mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="description">Video 1: "16 Year Old Boy Goes Off On Chief Keef Haters" - Click to play</p>
+            <a href="Assets/Video/16 Year Old Boy Goes Off On Chief Keef Haters  @RaraFrmAhkCity .mp4" class="link">Direct Video Link</a>
+        </div>
+
+        <!-- Video 2 with clickable play -->
+        <div class="media-container">
+            <video width="250" controls>
+                <source src="Assets/Video/Bear.wmv" type="video/wmv">
+                Your browser does not support the video tag.
+            </video>
+            <p class="description">Video 2: "Bear" - Click to play</p>
+            <a href="Assets/Video/Bear.wmv" class="link">Direct Video Link</a>
+        </div>
+
+        <!-- Video 3 with clickable play -->
+        <div class="media-container">
+            <video width="250" controls>
+                <source src="Assets/Video/Watch Our Planet ｜ Netflix Official Site [1661125431670733312].mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="description">Video 3: "Watch Our Planet" - Click to play</p>
+            <a href="Assets/Video/Watch Our Planet ｜ Netflix Official Site [1661125431670733312].mp4" class="link">Direct Video Link</a>
+        </div>
+
+        <!-- Audio file with clickable play -->
+        <div class="media-container">
+            <audio controls>
+                <source src="Assets/Audio/Pecos Bill_Unabridged_Nov2010.m4a" type="audio/m4a">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="description">Audio: "Pecos Bill" - Click to play</p>
+            <a href="Assets/Audio/Pecos Bill_Unabridged_Nov2010.m4a" class="link">Direct Audio Link</a>
+        </div>
+
+        <!-- Image 1 -->
+        <div class="media-container">
+            <img src="Assets/Images/DSC_0596.NEF" alt="Image 1">
+            <p class="description">Image 1: DSC_0596 - Click to view</p>
+            <a href="Assets/Images/DSC_0596.NEF" class="link">Direct Image Link</a>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="media-container">
+            <img src="Assets/Images/DSC_1468.JPG" alt="Image 2">
+            <p class="description">Image 2: DSC_1468 - Click to view</p>
+            <a href="Assets/Images/DSC_1468.JPG" class="link">Direct Image Link</a>
+        </div>
+
+        <!-- YouTube Video 1 (Auto Play) -->
+        <div class="media-container">
+            <iframe width="250" height="140" src="https://www.youtube.com/embed/X1rGwcVIsqI?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p class="description">YouTube Video 1 (Auto Play)</p>
+            <a href="https://www.youtube.com/watch?v=X1rGwcVIsqI" class="link">YouTube Link (Auto Play)</a>
+        </div>
+
+        <!-- YouTube Video 2 (Clickable) -->
+        <div class="media-container">
+            <iframe width="250" height="140" src="https://www.youtube.com/embed/HlU-lFUYkpI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p class="description">YouTube Video 2 (Click to play)</p>
+            <a href="https://www.youtube.com/watch?v=HlU-lFUYkpI" class="link">YouTube Link (Click to Play)</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="button">Back to Home</a>
+
+</body>
+</html>
