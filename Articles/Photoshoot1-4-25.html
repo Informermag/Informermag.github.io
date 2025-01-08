@@ -6,6 +6,30 @@
     <title>Informer Magazine</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="Hubpages.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .image-item {
+            text-align: center;
+            width: 200px;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-item input {
+            margin-top: 10px;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,11 +56,33 @@
             <div class="section">
                 <h1>Test!</h1>
                 <p>This is currently connected to the Articles button.</p>
-            <             </ul>
+
+                <!-- Image Gallery Section -->
+                <div class="gallery">
+                    <!-- Image 1 -->
+                    <div class="image-item">
+                        <img src="../Assets/Images/1-4-25/DSC_0383.jpg" alt="Image 1">
+                        <input type="text" placeholder="Enter text for Image 1">
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="image-item">
+                        <img src="../Assets/Images/1-4-25/DSC_0397.jpg" alt="Image 2">
+                        <input type="text" placeholder="Enter text for Image 2">
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="../Assets/Images/1-4-25/DSC_0390.jpg">
+                        <img src="images/image3.jpg" alt="Image 3">
+                        <input type="text" placeholder="Enter text for Image 3">
+                    </div>
+
+                    <!-- Add more images as needed -->
+                </div>
             </div>
         </div>
 
-     <!-- Right Sidebar -->
+        <!-- Right Sidebar -->
         <div class="right-sidebar">
             <h2>Latest Updates</h2>
             <ul>
