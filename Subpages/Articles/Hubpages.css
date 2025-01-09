@@ -1,4 +1,4 @@
-/* General Styles */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -7,83 +7,29 @@ body {
     text-align: center;
 }
 
-/* Header */
-header {
-    background-color: #3366cc;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-/* Container Layout */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Sidebar Styles */
-.sidebar {
-    background-color: #99ccff;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin: 10px 0;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: #000;
-}
-
-.left-sidebar {
-    grid-column: 1;
-}
-
-.right-sidebar {
-    grid-column: 3;
-}
-
-/* Main Content */
-.main-content {
-    grid-column: 2;
-    background-color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.main-content h1 {
-    font-size: 1.8em;
+/* Headings Styling */
+h1 {
     color: #333;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.main-content p {
-    color: #666;
-    margin-bottom: 20px;
+/* Button Styling */
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
-/* Media Gallery */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Media Gallery Styling */
 .media-gallery {
     display: flex;
     justify-content: center;
@@ -123,10 +69,105 @@ header {
     color: #666;
 }
 
-.text-box {
-    margin-top: 10px;
-    font-size: 14px;
+.link {
+    font-size: 12px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Layout and Sidebar Styling */
+
+/* Header */
+header {
+    background-color: #3366cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #99ccff;
+    width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Main content */
+.main {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main h1 {
+    font-size: 1.8em;
     color: #333;
+}
+
+.main .section {
+    margin-bottom: 20px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    background-color: #99ccff;
+    width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-sidebar h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.right-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-sidebar li {
+    margin: 10px 0;
+}
+
+.right-sidebar a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* Footer */
