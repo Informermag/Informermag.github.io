@@ -1,127 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informer Magazine</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="Hubpages.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informer Magazine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #222;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 200px;
+      height: calc(100vh - 60px);
+      background-color: #f0f0f0;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .right-sidebar {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      height: calc(100vh - 60px);
+      background-color: #f0f0f0;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .main {
+      margin-top: 60px;
+      margin-left: 200px;
+      margin-right: 200px;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ddd;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Welcome to Informer Magazine
-    </header>
+  <header>
+    Welcome to Informer Magazine
+  </header>
 
-    <div class="container">
-        <!-- Left Sidebar -->
-        <div class="sidebar">
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="Opinion.html">Opinion</a></li>
-                <li><a href="Entertainment.html">Entertainment</a></li>
-                <li><a href="Tech.html">Tech</a></li>
-                <li><a href="Video.html">Videos</a></li>
-                <li><a href="Special interest.html">Special Interest</a></li>
-                <li><a href="Photography.html">Photography</a></li>
-            </ul>
-        </div>
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="Opinion.html">Opinion</a></li>
+      <li><a href="Entertainment.html">Entertainment</a></li>
+      <li><a href="Tech.html">Tech</a></li>
+      <li><a href="Video.html">Videos</a></li>
+      <li><a href="Special interest.html">Special Interest</a></li>
+      <li><a href="Photography.html">Photography</a></li>
+    </ul>
+  </div>
 
-<div class="main">
+  <!-- Right Sidebar -->
+  <div class="right-sidebar">
+    <h2>Latest Updates</h2>
+    <ul>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <h2>Videos</h2>
+    <ul>
+      <li><a href="#">Video 1</a></li>
+      <li><a href="#">Video 2</a></li>
+      <li><a href="#">Video 3</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
     <div class="section" style="text-align: center;">
-        <h1>Welcome!</h1>
-        <p>This is the opinion page.</p>
+      <h1>Welcome!</h1>
+      <p>This is the opinion page.</p>
 
-    
-  
-        
-        
-        <!-- Top Images -->
-        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
-            <!-- Image 1 -->
-            <div style="width: 250px; text-align: center;">
-                <a href="/Assets/Images/1-4-25/DSC_0493.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0493.jpg" alt="Image 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-            </div>
-
-            <!-- Image 2 -->
-            <div style="width: 250px; text-align: center;">
-                <a href="/Assets/Images/1-4-25/DSC_0477.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0477.jpg" alt="Image 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-            </div>
-
-            <!-- Image 3 -->
-            <div style="width: 250px; text-align: center;">
-                <a href="/Assets/Images/1-4-25/DSC_0457.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0457.jpg" alt="Image 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-            </div>
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0493.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0493.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
         </div>
-
-        <!-- Text Block with Images Surrounding -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-
-            <!-- Text Block -->
-            <div style="flex-grow: 1; max-width: 900px; margin: 20px 10px; text-align: justify;">
-                <iframe 
-                    src="../Assets/Articles/DanceLikeBlackpeoplearewatching.html" 
-                    width="100%" 
-                    height="600" 
-                    style="border:none; display: block; margin: 0 auto;"
-                    title="Dance Like Black People Are Watching Article">
-                </iframe>
-                <p style="margin-top: 20px;">
-                    The images below bring the article to life by showcasing real-world inspirations behind the stories shared. Click on them to explore the full-sized versions and the stories that go along with each.
-                </p>
-            </div>
-
-            <!-- Image 1 -->
-            <div style="width: 250px; text-align: center; margin-bottom: 20px; float: left; margin-right: 20px;">
-                <a href="/Assets/Images/1-4-25/DSC_0493.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0493.jpg" alt="Image 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-                <p style="font-size: 14px; color: #666;">Image 1: DSC_0493</p>
-            </div>
-
-            <!-- Image 2 -->
-            <div style="width: 250px; text-align: center; margin-bottom: 20px; float: left; margin-right: 20px;">
-                <a href="/Assets/Images/1-4-25/DSC_0477.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0477.jpg" alt="Image 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-                <p style="font-size: 14px; color: #666;">Image 2: DSC_0477</p>
-            </div>
-
-            <!-- Image 3 -->
-            <div style="width: 250px; text-align: center; margin-bottom: 20px; float: left; margin-right: 20px;">
-                <a href="/Assets/Images/1-4-25/DSC_0457.jpg">
-                    <img src="/Assets/Images/1-4-25/DSC_0457.jpg" alt="Image 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                </a>
-                <p style="font-size: 14px; color: #666;">Image 3: DSC_0457</p>
-            </div>
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0477.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0477.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
         </div>
-
-        <!-- Right Sidebar -->
-      <div class="right-sidebar">
-            <h2>Latest Updates</h2>
-            <ul>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="Contact.html">Contact 3</a></li>
-            </ul>
-
-            <h2>Videos</h2>
-            <ul>
-                <li><a href="#">Video 1</a></li>
-                <li><a href="#">Video 2</a></li>
-                <li><a href="#">Video 3</a></li>
-            </ul>
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0457.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0457.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
         </div>
+      </div>
+
+      <div style="max-width: 900px; margin: auto; text-align: justify;">
+        <iframe 
+          src="../Assets/Articles/DanceLikeBlackpeoplearewatching.html"
+          width="100%" 
+          height="600" 
+          style="border: none;"
+        ></iframe>
+        <p style="margin-top: 20px;">
+          The images below bring the article to life by showcasing real-world inspirations behind the stories shared.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0493.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0493.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
+          <p style="font-size: 14px; color: #666;">Image 1: DSC_0493</p>
+        </div>
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0477.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0477.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
+          <p style="font-size: 14px; color: #666;">Image 2: DSC_0477</p>
+        </div>
+        <div style="width: 250px;">
+          <a href="/Assets/Images/1-4-25/DSC_0457.jpg">
+            <img src="/Assets/Images/1-4-25/DSC_0457.jpg" style="width: 100%; border-radius: 8px;">
+          </a>
+          <p style="font-size: 14px; color: #666;">Image 3: DSC_0457</p>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <footer>
-        © 2025 Website. All rights reserved.
-    </footer>
+  <footer>
+    © 2025 Website. All rights reserved.
+  </footer>
 </body>
 </html>
