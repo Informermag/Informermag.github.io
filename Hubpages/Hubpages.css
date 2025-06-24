@@ -8,9 +8,9 @@ body{
 
 main{
 
-    margin-left: 20px;
+    margin-left: 160px;
 
-    margin-right: 20px;
+    margin-right: 160px;
 
 }
 
@@ -78,7 +78,7 @@ h1{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #000000;
   display: block;
 }
 
