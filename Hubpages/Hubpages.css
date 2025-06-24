@@ -71,6 +71,8 @@ h1{
   background-color: #99ccff; /* Blue */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+        list-style-type: none;
+
 }
 
 /* The navigation menu links */
@@ -109,6 +111,8 @@ h1{
   background-color: #99ccff; /* Blue */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+        list-style-type: none;
+
 }
 
 /* The navigation menu links */
@@ -118,6 +122,8 @@ h1{
   font-size: 25px;
   color: #000000;
   display: block;
+        text-align: center;
+
 }
 
 /* When you mouse over the navigation links, change their color */
