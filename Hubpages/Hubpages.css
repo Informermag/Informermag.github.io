@@ -28,10 +28,9 @@ header {
     padding: 20px 0;
     font-size: 2em;
     font-weight: bold;
-  width: 100%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+ position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 /* Footer */
 footer {
