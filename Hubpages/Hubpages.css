@@ -30,7 +30,7 @@ header {
     font-weight: bold;
  position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 60%; /* Full width */
+  width: 80%; /* Full width */
     align: center;
 }
 /* Footer */
@@ -67,7 +67,7 @@ footer {
   font-size: 25px;
   color: #000000;
   display: block;
-     text-align: center;       
+         text-align: center;       
     list-style-type: none;
 
     
