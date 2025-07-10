@@ -30,7 +30,7 @@ header {
     font-weight: bold;
  position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 80%; /* Full width */
+  width: 75%; /* Full width */
     align: center;
 }
 /* Footer */
@@ -43,7 +43,7 @@ footer {
     font-size: 0.8em;
     position: fixed; /* Set the navbar to fixed position */
   Bottom: 0; /* Position the navbar at the bottom of the page */
-  width: 80%; /* Full width */
+  width: 70%; /* Full width */
     align: center;
 }
  /* The sidebar menu */
