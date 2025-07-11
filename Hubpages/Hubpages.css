@@ -7,7 +7,7 @@ body{
 }
 
 main{
-
+ overflow-x: hidden;
     margin-left: 160px;
 
     margin-right: 160px;
